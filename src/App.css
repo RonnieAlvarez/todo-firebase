@@ -1,10 +1,51 @@
+:root{
+    --bs-blue: #609efb;
+    --bs-indigo: #995ef8;
+    --bs-purple: #8664c7;
+    --bs-pink: #d85597;
+    --bs-red: #e05462;
+    --bs-orange: #f99a4d;
+    --bs-yellow: #f8d15c;
+    --bs-green: #46a579;
+    --bs-teal: #57dbb3;
+    --bs-cyan: #6ce0f7;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #74a8f7;
+    --bs-secondary: #818b94;
+    --bs-success: #41ab79;
+    --bs-info: #56d5ee;
+    --bs-warning: #f8d66f;
+    --bs-danger: #e26572;
+    --bs-light: #f8f9fa;
+    --bs-dark: #3b4148;
+}
+html{
+  background-color: var(--bs-gray-700)!important;
+}
 .App {
   text-align: center;
+  background-color: var(--bs-gray)!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bdr {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.bg-red {
+  background-color: red!important;
+  color: white!important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,9 +65,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
