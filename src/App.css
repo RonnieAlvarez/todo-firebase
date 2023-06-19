@@ -38,7 +38,9 @@ html{
   text-align: center;
   background-color: var(--bs-gray)!important;
 }
-
+.cantidad{
+  width: 4px!important;
+}
 .bdr {
   border-radius: 6px;
   overflow: hidden;
@@ -46,6 +48,12 @@ html{
 .bg-red {
   background-color: red!important;
   color: white!important;
+}
+
+.riscado {
+  text-decoration: line-through;
+  font-style: italic;
+  color: var(--bs-warning);
 }
 
 @media (prefers-reduced-motion: no-preference) {

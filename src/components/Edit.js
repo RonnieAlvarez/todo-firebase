@@ -9,6 +9,7 @@ export const Edit = () => {
   const [stock, setStock] = useState(0);
   const navigate = useNavigate();
   const {id} = useParams();
+  
   const update = async (e) => {
     e.preventDefault();
     const product =doc(db,"products",id)
@@ -27,15 +28,16 @@ export const Edit = () => {
 }
 useEffect(()=>{
   getProductsById(id)
+   // eslint-disable-next-line
 },[])
   return (
     <div className="container">
     <div className="row">
       <div className="col">
-        <h1> Edit Product</h1>
+        <h1> Editar Linea</h1>
         <form onSubmit={update}>
           <div className="mb-3">
-            <label className="form-label">Description</label>
+            <label className="form-label">Descripción</label>
             <input
               value={description}
               onChange={(e) => setDescription(e.target.value)}
@@ -44,7 +46,7 @@ useEffect(()=>{
             />
           </div>
           <div className="mb-3">
-            <label className="form-label">Stock</label>
+            <label className="form-label">Cantidad</label>
             <input
               value={stock}
               onChange={(e) => setStock(e.target.value)}
@@ -52,7 +54,7 @@ useEffect(()=>{
               className="form-control"
             />
           </div>
-          <button className="btn btn-primary btn-sm" type="submit">Update</button>
+          <button className="btn btn-primary btn-sm" type="submit">Actualiza</button>
         </form>
       </div>
     </div>
